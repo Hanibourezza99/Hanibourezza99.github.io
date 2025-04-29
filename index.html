@@ -1,337 +1,156 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Hani Bourezza's Portfolio showcasing LifeQuestor project">
-
     <title>Hani Bourezza - Portfolio</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
-
         body {
-
             font-family: 'Inter', sans-serif;
-
         }
-
         .fade-in {
-
             opacity: 0;
-
             transform: translateY(20px);
-
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-
         }
-
         .fade-in.visible {
-
             opacity: 1;
-
             transform: translateY(0);
-
         }
-
         nav a:hover {
-
             color: #60a5fa;
-
         }
-
         .section {
-
             min-height: 100vh;
-
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
         }
-
         .skill-logo {
-
             max-width: 120px;
-
             height: auto;
-
         }
-
     </style>
-
 </head>
-
 <body class="bg-gray-50 text-gray-900">
-
     <!-- Navigation -->
-
     <nav class="bg-white shadow-md fixed w-full top-0 z-10">
-
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
             <div class="flex justify-between h-16 items-center">
-
                 <span class="text-2xl font-bold text-gray-900">Hani B.</span>
-
                 <div class="flex space-x-6">
-
                     <a href="#home" class="text-gray-600 hover:text-blue-400 transition">Home</a>
-
                     <a href="#portfolio" class="text-gray-600 hover:text-blue-400 transition">Portfolio</a>
-
                     <a href="#connect" class="text-gray-600 hover:text-blue-400 transition">Connect</a>
-
                 </div>
-
             </div>
-
         </div>
-
     </nav>
 
-
-
     <!-- About Me Section -->
-
-    <section id="about" class="section bg-white">
-
+    <section id="home" class="section bg-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center fade-in">
-
             <h1 class="text-4xl font-bold mb-4">About Me</h1>
-
             <p class="text-lg text-gray-600 leading-relaxed mb-8">
-
                 I'm Hani Bourezza, a developer passionate about creating innovative solutions. My expertise lies in mobile app development and cloud architecture, with a focus on building scalable, user-friendly applications.
-
             </p>
-
             <h2 class="text-2xl font-semibold mb-4">Key Skills</h2>
-
             <div class="flex justify-center space-x-8">
-
                 <div class="flex flex-col items-center">
-
                     <img src="https://unpkg.com/@aws-amplify/ui@3.5.4/dist/icons/aws-logo.svg" alt="AWS Logo" class="skill-logo mb-2">
-
                     <span class="text-gray-600">AWS</span>
-
                 </div>
-
                 <div class="flex flex-col items-center">
-
                     <img src="https://unpkg.com/@flutter-dev/icons@0.0.1/flutter-logo.svg" alt="Flutter Logo" class="skill-logo mb-2">
-
                     <span class="text-gray-600">Flutter</span>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-
 
     <!-- LifeQuestor Project Section -->
-
-    <section id="project" class="section bg-gray-100">
-
+    <section id="portfolio" class="section bg-gray-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 fade-in">
-
             <h1 class="text-4xl font-bold text-center mb-8">LifeQuestor Project</h1>
-
-
-
             <!-- Description -->
-
             <div class="mb-12">
-
                 <h2 class="text-2xl font-semibold mb-4">Description</h2>
-
                 <p class="text-lg text-gray-600 leading-relaxed">
-
                     LifeQuestor is a mobile app designed to help users track and achieve personal goals. Built with Flutter and powered by AWS, it offers a seamless and scalable user experience.
-
                 </p>
-
             </div>
-
-
-
             <!-- Screenshot -->
-
             <div class="mb-12">
-
                 <h2 class="text-2xl font-semibold mb-4">Screenshot</h2>
-
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
                     <img src="assets/images/login.png" alt="LifeQuestor Screenshot" class="w-full h-auto rounded-lg shadow-md">
-
                 </div>
-
             </div>
-
-
-
             <!-- AWS Diagram -->
-
             <div class="mb-12">
-
                 <h2 class="text-2xl font-semibold mb-4">AWS Architecture</h2>
-
                 <img src="https://placehold.co/600x400" alt="AWS Diagram Placeholder" class="w-full h-auto rounded-lg shadow-md">
-
                 <p class="text-sm text-gray-500 mt-2">Placeholder: AWS diagram coming soon.</p>
-
             </div>
-
-
-
             <!-- Demo Video -->
-
             <div class="mb-12">
-
                 <h2 class="text-2xl font-semibold mb-4">Demo Video</h2>
-
                 <video class="w-full rounded-lg shadow-md" controls>
-
                     <source src="assets/videos/LifeQuestor.mp4" type="video/mp4">
-
                     Your browser does not support the video tag.
-
                 </video>
-
-                <!-- Alternative: YouTube (commented out since we're hosting the video)
-
-                <div class="relative" style="padding-top: 56.25%;">
-
-                    <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-
-                </div>
-
-                -->
-
             </div>
-
-
-
             <!-- APK Link -->
-
             <div class="mb-12">
-
                 <h2 class="text-2xl font-semibold mb-4">Download APK</h2>
-
                 <p class="text-lg text-gray-600">APK coming soon.</p>
-
-                <!-- If you have an APK link, uncomment and update:
-
-                <a href="https://drive.google.com/uc?export=download&id=FILE_ID" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Download APK</a>
-
-                -->
-
             </div>
-
         </div>
-
     </section>
-
-
 
     <!-- Contact Section -->
-
-    <section id="contact" class="section bg-white">
-
+    <section id="connect" class="section bg-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center fade-in">
-
             <h1 class="text-4xl font-bold mb-4">Get in Touch</h1>
-
             <p class="text-lg text-gray-600 mb-8">Interested in collaborating? Send me a message!</p>
-
             <form id="contact-form" class="max-w-lg mx-auto">
-
                 <div class="mb-4">
-
                     <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent" required>
-
                 </div>
-
                 <div class="mb-4">
-
                     <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent" required>
-
                 </div>
-
                 <div class="mb-4">
-
                     <textarea id="message" rows="4" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent" required></textarea>
-
                 </div>
-
                 <button type="button" onclick="submitForm()" class="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition">Send Message</button>
-
             </form>
-
         </div>
-
     </section>
 
-
-
     <script>
-
         // Fade-in animation on scroll
-
         const fadeIns = document.querySelectorAll('.fade-in');
-
         const observer = new IntersectionObserver((entries) => {
-
             entries.forEach(entry => {
-
                 if (entry.isIntersecting) {
-
                     entry.target.classList.add('visible');
-
                 }
-
             });
-
         }, { threshold: 0.1 });
-
         fadeIns.forEach(el => observer.observe(el));
 
-
-
         // Form submission (demo)
-
         function submitForm() {
-
             const name = document.getElementById('name').value;
-
             const email = document.getElementById('email').value;
-
             const message = document.getElementById('message').value;
-
             console.log('Form submitted:', { name, email, message });
-
             alert('Message sent! (Demo: Check console. Use Formspree for real submissions.)');
-
             document.getElementById('contact-form').reset();
-
         }
-
     </script>
-
 </body>
-
 </html>
