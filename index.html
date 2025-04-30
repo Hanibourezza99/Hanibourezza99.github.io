@@ -29,7 +29,7 @@
             justify-content: center;
         }
         .skill-logo {
-            max-width: 40px; /* Reduced from 120px to resize logos */
+            max-width: 40px;
             height: auto;
         }
     </style>
@@ -58,12 +58,12 @@
             </p>
             <h2 class="text-2xl font-semibold mb-4">Key Skills</h2>
             <div class="flex justify-center space-x-8">
-                <div class="flex flex-col items-center">
-                    <img src="assets/images/aws-2.svg" alt="AWS Logo" class="skill-logo mb-2">
+                <div class="flex items-center space-x-2">
+                    <img src="assets/images/aws-2.svg" alt="AWS Logo" class="skill-logo">
                     <span class="text-gray-600">AWS</span>
                 </div>
-                <div class="flex flex-col items-center">
-                    <img src="assets/images/flutter.svg" alt="Flutter Logo" class="skill-logo mb-2">
+                <div class="flex items-center space-x-2">
+                    <img src="assets/images/flutter.svg" alt="Flutter Logo" class="skill-logo">
                     <span class="text-gray-600">Flutter</span>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                 <div class="mb-4">
                     <textarea id="message" rows="4" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent" required></textarea>
                 </div>
-                <button type="button" onclick="submitForm()" class="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition">Send Message</button>
+                <button type="button" onclick="submitForm()" class="w-full bg-black text-white p-3 rounded-lg hover:bg-gray-800 transition font-semibold tracking-wide text-lg">Send Message</button>
             </form>
         </div>
     </section>
